@@ -59,7 +59,7 @@ def lancer_partie(db, nom_joueur, equipe):
                     print(f"Le {m_nom} frappe {cible['nom']} ! {degats_monstre} dégâts encaissés.")
                     
                     if cible['pv'] <= 0:
-                        print(f"{cible['nom']} a succombé à ses blessures.")
+                        print(f"{cible['nom']} à été éliminé.")
 
                 # On vérifie si toute l'équipe est morte
                 pv_totaux_equipe = 0

@@ -20,8 +20,7 @@ def info_perso(nom, atk, def_val, pv):
     return perso
 
 def info_monstre(nom, atk, def_val, pv):
-    # Pareil pour les monstres mais sans le pv_max
-    # On regroupe tout dans un dictionnaire simple
+    # Pareil pour les monstres
     monstre = {
         "nom": nom,
         "atk": atk,
@@ -29,8 +28,8 @@ def info_monstre(nom, atk, def_val, pv):
         "pv": pv
     }
     
-    # On rajoute des print
-    print("--- Nouveau monstre detecte ---")
+
+    print("--- Nouveau monstre ---")
     print("Type : " + str(monstre["nom"]))
     print("Puissance : " + str(monstre["atk"]))
     print("Resistance : " + str(monstre["def"]))

@@ -16,7 +16,7 @@ def afficher_classement(db):
         rang = rang + 1
     
     if rang == 1:
-        print("Aucun score pour le moment. Soyez le premier !")
+        print("Aucun score pour le moment.")
     print("="*30)
 
 def recuperer_liste_persos(db):
@@ -55,7 +55,7 @@ def lancer_partie(db, nom_joueur, equipe):
                     print(f"{hero['nom']} frappe le {monstre['nom']} et retire {degats} PV.")
             
             if m_pv <= 0:
-                print(f"Victoire ! Le {monstre['nom']} est terrassé.")
+                print(f"Victoire ! Le {monstre['nom']} est battu.")
                 nb_vagues = nb_vagues + 1
             else:
                 # Tour du monstre
@@ -82,7 +82,7 @@ def lancer_partie(db, nom_joueur, equipe):
                 
                 if total_pv <= 0:
                     print("\n--- DEFAITE ---")
-                    print("Tous vos héros sont tombés au combat...")
+                    print("Tous vos héros on perdu...")
                     equipe_en_vie = False
                     
     # Fin de partie et sauvegarde

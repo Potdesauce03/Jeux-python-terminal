@@ -3,7 +3,7 @@ import pymongo
 def afficher_classement(db):
 
     print("\n" + "!" * 40)
-    print("       CLASSEMENT DES LEGENDES")
+    print("CLASSEMENT")
     print("!" * 40)
     
     # On récupère les 3 meilleurs scores
@@ -23,10 +23,10 @@ def afficher_classement(db):
     # Si personne n'a encore joué
     if place == 1:
         print(" Le classement est vide pour le moment...")
-        print(" Soyez le premier à inscrire votre nom !")
+        print(" Soyez le premier !")
         print("!" * 40)
     else:
-        print(" Félicitations aux champions !")
+        print(" Félicitations au vainqueur !")
         print("!" * 40)
     print("\n")
 
