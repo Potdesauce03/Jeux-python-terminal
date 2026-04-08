@@ -32,7 +32,6 @@ def afficher_classement(db):
 
 def recuperer_liste_persos(db):
     # On récupère les 10 persos qu'on a mis dans db_init
-    #transformation
     curseur = db["personnages"].find()
     liste_complete = []
     

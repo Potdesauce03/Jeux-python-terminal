@@ -1,5 +1,5 @@
 def info_perso(nom, atk, def_val, pv):
-    #crée un dictionnaire pour un perso
+    # Crée un dictionnaire pour un perso
     #On met les stats
     perso = {
         "nom": nom,
@@ -9,7 +9,7 @@ def info_perso(nom, atk, def_val, pv):
         "pv_max": pv
     }
     
-    #message pour dire que c'est ok
+    # Message pour verifier
     print("--- Creation du personnage ---")
     print("Nom du heros : " + str(perso["nom"]))
     print("Force : " + str(perso["atk"]))
@@ -39,7 +39,7 @@ def info_monstre(nom, atk, def_val, pv):
     return monstre
 
 def preparer_score(joueur, score_vagues):
-    # On prepare le petit pack de donnees pour MongoDB
+    # On prepare les donnees pour MongoDB
     donnees_score = {
         "nom": joueur,
         "score": score_vagues
